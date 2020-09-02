@@ -69,12 +69,6 @@ public class VideoPlayerActivity extends YouTubeBaseActivity {
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
                 Log.i(TAG, "onInitializationSuccess: START LOADING VIDEO ...");
-                // if orientation is landscape > enable full screen
-                int orientation = getResources().getConfiguration().orientation;
-                if (orientation == Configuration.ORIENTATION_LANDSCAPE) {
-                    // In landscape
-                    youTubePlayer.setFullscreen(true);
-                }
                 youTubePlayer.loadVideo(videoId);
             }
 
@@ -92,10 +86,5 @@ public class VideoPlayerActivity extends YouTubeBaseActivity {
         mViewsCountTv.setText(mItem.getStatistic().getViewCount());
         mLikesCountTv.setText(mItem.getStatistic().getLikeCount());
         mDislikesCountTv.setText(mItem.getStatistic().getDislikeCount());
-    }
-
-    @Override
-    public void onSaveInstanceState(@NonNull Bundle outState, @NonNull PersistableBundle outPersistentState) {
-        super.onSaveInstanceState(outState, outPersistentState);
     }
 }
