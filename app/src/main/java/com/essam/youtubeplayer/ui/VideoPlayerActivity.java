@@ -1,6 +1,7 @@
 package com.essam.youtubeplayer.ui;
 
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
@@ -65,6 +66,12 @@ public class VideoPlayerActivity extends YouTubeBaseActivity {
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
                 Log.i(TAG, "onInitializationSuccess: START LOADING VIDEO ...");
+                // if orientation is landscape > enable full screen
+                int orientation = getResources().getConfiguration().orientation;
+                if (orientation == Configuration.ORIENTATION_LANDSCAPE) {
+                    // In landscape
+                    youTubePlayer.setFullscreen(true);
+                }
                 youTubePlayer.loadVideo(videoId);
             }
 
