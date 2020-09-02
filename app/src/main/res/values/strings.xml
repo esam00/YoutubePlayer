@@ -8,4 +8,5 @@
     <string name="logo">logo</string>
     <string name="no_internet">No Internet connection!</string>
     <string name="retry">Retry</string>
+    <string name="videos_updated">Trending videos updated</string>
 </resources>

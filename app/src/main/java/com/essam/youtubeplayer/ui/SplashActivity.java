@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.essam.youtubeplayer.ui.home.HomeActivity;
+
 public class SplashActivity extends AppCompatActivity {
 
     @Override
@@ -17,7 +19,7 @@ public class SplashActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        startActivity(new Intent(this,HomeActivity.class));
+        startActivity(new Intent(this, HomeActivity.class));
         finish();
     }
 }
