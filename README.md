@@ -12,6 +12,6 @@ A simple Android App for youtube streaming based on Youtube Data API
 <img src="screenshots/player2.png" width=300> <img src="screenshots/player1.png" width=300>
 
 ## Libraries
-* YoutubePlayerView Api
+* YouTube Android Player API
 * Retrofit2
 * Gson 
