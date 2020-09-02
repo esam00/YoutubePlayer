@@ -1,13 +1,9 @@
 package com.essam.youtubeplayer.ui;
 
 import android.content.Intent;
-import android.content.res.Configuration;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.util.Log;
 import android.widget.TextView;
-
-import androidx.annotation.NonNull;
 
 import com.essam.youtubeplayer.R;
 import com.essam.youtubeplayer.utils.Consts;
