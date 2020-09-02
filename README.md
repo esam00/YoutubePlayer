@@ -9,7 +9,7 @@ A simple Android App for youtube streaming based on Youtube Data API
 ## screenShots 
 <img src="screenshots/splash.png" width=300> <img src="screenshots/trending.png" width=300>
 
-<img src="screenshots/network.png" width=300> <img src="screenshots/player1.png" width=300>
+<img src="screenshots/player2.png" width=300> <img src="screenshots/player1.png" width=300>
 
 ## Libraries
 * YoutubePlayerView Api
